@@ -1,6 +1,9 @@
 type User {
   id: ID! @id
   avatar: String
+    @default(
+      value: "https://user-images.githubusercontent.com/29893072/62708211-e0d71f00-ba2d-11e9-89bf-9e5eb6bf2360.jpg"
+    )
   username: String! @unique
   email: String! @unique
   firstName: String @default(value: "")
