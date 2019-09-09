@@ -5,6 +5,9 @@
   "repository": "https://github.com/parkchanjong/Simulacre.git",
   "author": "parkchanjong <7000cj@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "yarn": "1.10.1"
+  },
   "dependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.5.5",
@@ -33,8 +36,9 @@
     "generate": "prisma generate",
     "prisma": "yarn run deploy && yarn run generate",
     "dev": "nodemon --exec babel-node src/server.js",
+    "prebuild": "yarn run prisma",
     "build": "babel src -d build",
-    "postbuild": "cd src && copy ./api/**/*.graphql ../build/api/",
+    "postbuild": "cd src && npx copy ./api/**/*.graphql ../build/api/",
     "start": "node build/server.js"
   }
 }
