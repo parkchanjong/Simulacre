@@ -2,3 +2,4 @@
 Simulacre
 
 * sns
+* heroku
