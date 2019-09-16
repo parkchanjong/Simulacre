@@ -9,11 +9,9 @@
     "yarn": "1.10.1"
   },
   "dependencies": {
-    "@babel/cli": "^7.6.0",
     "@babel/core": "^7.5.5",
     "@babel/node": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
-    "@babel/runtime": "^7.6.0",
     "copy": "^0.3.2",
     "dotenv": "^8.0.0",
     "graphql-tools": "^4.0.5",
@@ -29,7 +27,6 @@
     "prisma-client-lib": "^1.34.1"
   },
   "devDependencies": {
-    "@babel/plugin-transform-runtime": "^7.6.0",
     "nodemon": "^1.19.1"
   },
   "scripts": {
