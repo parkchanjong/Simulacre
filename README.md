@@ -2,4 +2,4 @@
 Simulacre
 
 * sns
-* heroku deploy
+* heroku deploy!
